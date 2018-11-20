@@ -1,0 +1,68 @@
+<!DOCTYPE html><html lang="zh-Hans"><head><meta name="generator" content="Hexo 3.8.0"><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta name="description" content="使用Hexo搭建个人博客"><meta name="keywords" content="Hexo,GitHub"><meta name="author" content="unlzh,undefined"><meta name="copyright" content="unlzh"><title>使用Hexo搭建个人博客 | unlzh·Blog</title><link rel="shortcut icon" href="/favicon.png"><link rel="stylesheet" href="/css/index.css?version=1.5.6"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css?version=1.5.6"><link rel="dns-prefetch" href="https://cdn.staticfile.org"><link rel="dns-prefetch" href="https://cdn.bootcss.com"><link rel="dns-prefetch" href="https://creativecommons.org"><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.css"><script src="https://cdn.jsdelivr.net/gh/upupming/gitalk@36368e5dffd049e956cdbbd751ff96c28d8255cf/dist/gitalk.min.js"></script><script src="https://cdn.jsdelivr.net/npm/blueimp-md5@2.10.0/js/md5.min.js"></script><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  }
+} </script></head><body><canvas class="fireworks"></canvas><i class="fa fa-arrow-right" id="toggle-sidebar" aria-hidden="true"></i><div id="sidebar"><div class="toggle-sidebar-info text-center"><span data-toggle="切换文章详情">切换站点概览</span><hr></div><div class="sidebar-toc"><div class="sidebar-toc__title">目录</div><div class="sidebar-toc__progress"><span class="progress-notice">你已经读了</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar"></div></div><div class="sidebar-toc__content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#演示环境"><span class="toc-text">演示环境</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#简介"><span class="toc-text">简介</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#准备"><span class="toc-text">准备</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#安装"><span class="toc-text">安装</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#在以上安装过程中可同步进行GitHub的准备工作"><span class="toc-text">在以上安装过程中可同步进行GitHub的准备工作</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#创建SSH-Key"><span class="toc-text">创建SSH Key</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#新建项目"><span class="toc-text">新建项目</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#开始搭建"><span class="toc-text">开始搭建</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#初始化Hexo"><span class="toc-text">初始化Hexo</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#配置"><span class="toc-text">配置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#上传GitHub"><span class="toc-text">上传GitHub</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#测试"><span class="toc-text">测试</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#后续"><span class="toc-text">后续</span></a></li></ol></div></div><div class="author-info hide"><div class="author-info__avatar text-center"><img src="https://unlzhblog-1258116282.cos.ap-guangzhou.myqcloud.com/avatar.jpg"></div><div class="author-info__name text-center">unlzh</div><div class="author-info__description text-center">分享技术、生活。</div><hr><div class="author-info-articles"><a class="author-info-articles__archives article-meta" href="/archives"><span class="pull-left">文章</span><span class="pull-right">1</span></a><a class="author-info-articles__tags article-meta" href="/tags"><span class="pull-left">标签</span><span class="pull-right">2</span></a><a class="author-info-articles__categories article-meta" href="/categories"><span class="pull-left">分类</span><span class="pull-right">1</span></a></div></div></div><div id="content-outer"><div id="top-container" style="background-image: url(https://unlzhblog-1258116282.cos.ap-guangzhou.myqcloud.com/homebanner.jpg)"><div id="page-header"><span class="pull-left"> <a id="site-name" href="/">unlzh·Blog</a></span><i class="fa fa-bars toggle-menu pull-right" aria-hidden="true"></i><span class="pull-right menus"><a class="site-page" href="/">首页</a><a class="site-page" href="/archives">归档</a><a class="site-page" href="/tags">标签</a><a class="site-page" href="/categories">分类</a></span></div><div id="post-info"><div id="post-title">使用Hexo搭建个人博客</div><div id="post-meta"><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i> 2018-11-21</time><span class="post-meta__separator">|</span><i class="fa fa-inbox post-meta__icon" aria-hidden="true"></i><a class="post-meta__categories" href="/categories/搭建/">搭建</a></div></div></div><div class="layout" id="content-inner"><article id="post"><div class="article-container" id="post-content"><h2 id="演示环境"><a href="#演示环境" class="headerlink" title="演示环境"></a>演示环境</h2><ul>
+<li>Windows 10（Linux下搭建可参考<a href="https://segmentfault.com/a/1190000016314212" target="_blank" rel="noopener">使用Hexo搭建个人博客的终极资料</a>）</li>
+<li>Hexo+GitHub Pages</li>
+</ul>
+<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>Hexo是一个快速、易用且高效的博客框架。Hexo使用 <strong>Markdown</strong>（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</p>
+<p>GitHub的好处自然不用多说，<strong>Github Pages</strong> 可以为项目建立静态主页，使用Hexo+GitHub Pages方案搭建个人博客时间成本和维护成本将大大降低。</p>
+<h3 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h3><p>安装Hexo前需要准备以下环境</p>
+<ul>
+<li>Git</li>
+<li>Node.js（很简单，这里就不赘述了，<a href="https://blog.csdn.net/luanxiyuan/article/details/80720356" target="_blank" rel="noopener">详细过程可参考博文</a>和<a href="https://github.com/nodejs/node-gyp" target="_blank" rel="noopener">GitHub</a>）</li>
+</ul>
+<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p>使用Node.js自带的npm全局安装Hexo，打开Git Bash Here输入</p>
+<p><code>$ npm install -g hexo-cli</code></p>
+<p>输入<code>$ hexo -v</code>验证安装是否成功</p>
+<h2 id="在以上安装过程中可同步进行GitHub的准备工作"><a href="#在以上安装过程中可同步进行GitHub的准备工作" class="headerlink" title="在以上安装过程中可同步进行GitHub的准备工作"></a>在以上安装过程中可同步进行GitHub的准备工作</h2><h3 id="创建SSH-Key"><a href="#创建SSH-Key" class="headerlink" title="创建SSH Key"></a>创建SSH Key</h3><p>打开Git Bash Here，输入</p>
+<p><code>$ ssh-keygen -t rsa -C &quot;你的邮箱地址（例：xxx123@gamil.com）&quot;</code></p>
+<p>完成之后在用户目录中找到<strong>.ssh</strong>目录，不出意外会有<strong>id_rsa</strong>和<strong>id_rsa.pub</strong>两个文件</p>
+<blockquote>
+<p>id_rsa是私钥，自己妥善保管；id_rsa.pub是公钥，后面将会用到。</p>
+</blockquote>
+<p>登录GitHub，点击Settings —&gt; SSH and GPG keys —&gt; New SSH Key，Title任意，在Key框内粘贴id_rsa.pub内容，点击Add SSH Key完成创建。</p>
+<p><img src="https://unlzhblog-1258116282.cos.ap-guangzhou.myqcloud.com/%E4%BD%BF%E7%94%A8Hexo%E6%90%AD%E5%BB%BAGitHub%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/Snipaste_2018-11-21_21-35-13.png" alt="创建SSH Key"></p>
+<h3 id="新建项目"><a href="#新建项目" class="headerlink" title="新建项目"></a>新建项目</h3><p>点击new repository，在Repository name输入框中填写username（你的账户名）.github.io，如unlzh.github.io</p>
+<p><img src="https://unlzhblog-1258116282.cos.ap-guangzhou.myqcloud.com/%E4%BD%BF%E7%94%A8Hexo%E6%90%AD%E5%BB%BAGitHub%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/Snipaste_2018-11-21_21-45-08.png" alt="创建项目仓库"></p>
+<p>创建项目成功后，访问https://你的账户名.github.io也就是刚刚填写的Repository name，出现项目名称等字样就说明成功。</p>
+<h2 id="开始搭建"><a href="#开始搭建" class="headerlink" title="开始搭建"></a>开始搭建</h2><h3 id="初始化Hexo"><a href="#初始化Hexo" class="headerlink" title="初始化Hexo"></a>初始化Hexo</h3><p>Hexo安装成功后，输入</p>
+<p><code>$ hexo init &lt;folder&gt;</code></p>
+<p><folder>即为你指定的文件夹，如何没有设置<folder>，默认在当前文件夹中建立项目</folder></folder></p>
+<p>进入项目目录并安装依赖</p>
+<p><code>$ cd &lt;folder&gt;</code></p>
+<p><code>$ npm install</code></p>
+<p>完成后执行<code>$ hexo server</code>启动服务器，访问<a href="http://localhost:4000，就可以看到hexo默认的界面" target="_blank" rel="noopener">http://localhost:4000，就可以看到hexo默认的界面</a></p>
+<p><img src="https://unlzhblog-1258116282.cos.ap-guangzhou.myqcloud.com/%E4%BD%BF%E7%94%A8Hexo%E6%90%AD%E5%BB%BAGitHub%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/1457704624-5a98b7fd1c954.png" alt="hexo默认界面"></p>
+<h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3><p>打开hexo项目目录中的_config.yml文件，找到deploy标签，修改：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repository: https://github.com/unlzh/unlzh.github.io.git #更换为你的博客的仓库地址</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+<p><img src="https://unlzhblog-1258116282.cos.ap-guangzhou.myqcloud.com/%E4%BD%BF%E7%94%A8Hexo%E6%90%AD%E5%BB%BAGitHub%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/Snipaste_2018-11-21_22-13-38.png" alt="复制repository地址"></p>
+<p>找到url，修改：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">url: http://unlzh.github.io # unlzh更换为你的GitHub账户名</span><br></pre></td></tr></table></figure>
+<h3 id="上传GitHub"><a href="#上传GitHub" class="headerlink" title="上传GitHub"></a>上传GitHub</h3><p>在hexo项目目录中打开Git Bash Here，安装hexo-deployer-git，否则可能出现错误</p>
+<p><code>$ npm install hexo-deployer-git --save</code></p>
+<p>然后执行</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ hexo clean</span><br><span class="line">$ hexo generate</span><br><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>这也是后续提交博客文章用到的三个命令</p>
+<h3 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h3><p>上传无误后访问博客地址，即https://你的账户名.github.io出现的页面和访问localhost:4000的一样就成功了！</p>
+<h2 id="后续"><a href="#后续" class="headerlink" title="后续"></a>后续</h2><ul>
+<li>搭建过程中出现的难题以及自定义配置可查阅<a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener">Hexo官方文档</a></li>
+<li>Markdown的语法学习可以浏览<a href="https://sspai.com/topic/185" target="_blank" rel="noopener">少数派的Markdown专栏</a></li>
+<li>更多问题欢迎留言探讨！！</li>
+</ul>
+</div></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">unlzh</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://unlzh.github.io/2018/11/22/使用Hexo搭建GitHub个人博客/">http://unlzh.github.io/2018/11/22/使用Hexo搭建GitHub个人博客/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://unlzh.github.io" target="_blank">unlzh·Blog</a>！</span></div></div><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/Hexo/">Hexo</a><a class="post-meta__tags" href="/tags/GitHub/">GitHub</a></div><nav id="pagination"></nav><div id="gitalk-container"></div><script>var gitalk = new Gitalk({
+  clientID: '94e0f2be0076760d4dc2',
+  clientSecret: 'ae20eb3a6e311d566527105c71a48b7245e01478',
+  repo: 'unlzh.github.io',
+  owner: 'unlzh',
+  admin: 'unlzh',
+  id: md5(decodeURI(location.pathname)),
+  language: 'zh-CN'
+})
+gitalk.render('gitalk-container')</script></div></div><footer><div class="layout" id="footer"><div class="copyright">&copy;2018 By unlzh</div><div class="framework-info"><span>驱动 - </span><a href="http://hexo.io"><span>Hexo</span></a><span class="footer-separator">|</span><span>主题 - </span><a href="https://github.com/Molunerfinn/hexo-theme-melody"><span>Melody</span></a></div><div class="busuanzi"><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><span id="busuanzi_container_page_pv"><i class="fa fa-file-o"></i><span id="busuanzi_value_page_pv"></span><span></span></span></div></div></footer><i class="fa fa-arrow-up" id="go-up" aria-hidden="true"></i><script src="/js/third-party/anime.min.js"></script><script src="/js/third-party/jquery.min.js"></script><script src="/js/third-party/jquery.fancybox.min.js"></script><script src="/js/third-party/velocity.min.js"></script><script src="/js/third-party/velocity.ui.min.js"></script><script src="/js/utils.js?version=1.5.6"></script><script src="/js/fancybox.js?version=1.5.6"></script><script src="/js/sidebar.js?version=1.5.6"></script><script src="/js/copy.js?version=1.5.6"></script><script src="/js/fireworks.js?version=1.5.6"></script><script src="/js/transition.js?version=1.5.6"></script><script src="/js/scroll.js?version=1.5.6"></script><script src="/js/head.js?version=1.5.6"></script></body></html>
