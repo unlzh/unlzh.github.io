@@ -1,0 +1,94 @@
+<!DOCTYPE html><html lang="zh-Hans"><head><meta name="generator" content="Hexo 3.8.0"><meta name="google-site-verification" content="ug1t8aqiM8pT-CENiyJOv1qGIAJwvRaPbxiRlnxxUcU"><meta name="baidu-site-verification" content="PlU0GdywA0"><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta name="description" content="使用Hexo搭建GitHub个人博客（二）"><meta name="keywords" content="Hexo,GitHub"><meta name="author" content="unlzh,undefined"><meta name="copyright" content="unlzh"><title>使用Hexo搭建GitHub个人博客（二） | unlzh·Blog</title><link rel="shortcut icon" href="/favicon.png"><link rel="stylesheet" href="/css/index.css?version=1.5.6"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css?version=1.5.6"><link rel="dns-prefetch" href="https://cdn.staticfile.org"><link rel="dns-prefetch" href="https://cdn.bootcss.com"><link rel="dns-prefetch" href="https://creativecommons.org"><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.css"><script src="https://cdn.jsdelivr.net/gh/upupming/gitalk@36368e5dffd049e956cdbbd751ff96c28d8255cf/dist/gitalk.min.js"></script><script src="https://cdn.jsdelivr.net/npm/blueimp-md5@2.10.0/js/md5.min.js"></script><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  }
+} </script></head><body><canvas class="fireworks"></canvas><i class="fa fa-arrow-right" id="toggle-sidebar" aria-hidden="true"></i><div id="sidebar"><div class="toggle-sidebar-info text-center"><span data-toggle="切换文章详情">切换站点概览</span><hr></div><div class="sidebar-toc"><div class="sidebar-toc__title">目录</div><div class="sidebar-toc__progress"><span class="progress-notice">你已经读了</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar"></div></div><div class="sidebar-toc__content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#内容概述"><span class="toc-text">内容概述</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#主题"><span class="toc-text">主题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#图床"><span class="toc-text">图床</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#组件"><span class="toc-text">组件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#SEO优化"><span class="toc-text">SEO优化</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#安装hexo-generator-sitemap"><span class="toc-text">安装hexo-generator-sitemap</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#新建robots-txt"><span class="toc-text">新建robots.txt</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#配置Google-Search-Console"><span class="toc-text">配置Google Search Console</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#其他"><span class="toc-text">其他</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#自定义404页面"><span class="toc-text">自定义404页面</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#更多有趣的插件：https-hexo-io-plugins"><span class="toc-text">更多有趣的插件：https://hexo.io/plugins/</span></a></li></ol></li></ol></div></div><div class="author-info hide"><div class="author-info__avatar text-center"><img src="https://unlzhblog-1258116282.cos.ap-guangzhou.myqcloud.com/avatar.jpg"></div><div class="author-info__name text-center">unlzh</div><div class="author-info__description text-center">分享技术、生活。</div><hr><div class="author-info-articles"><a class="author-info-articles__archives article-meta" href="/archives"><span class="pull-left">文章</span><span class="pull-right">2</span></a><a class="author-info-articles__tags article-meta" href="/tags"><span class="pull-left">标签</span><span class="pull-right">2</span></a><a class="author-info-articles__categories article-meta" href="/categories"><span class="pull-left">分类</span><span class="pull-right">1</span></a></div></div></div><div id="content-outer"><div id="top-container" style="background-image: url(https://unlzhblog-1258116282.cos.ap-guangzhou.myqcloud.com/homebanner.jpg)"><div id="page-header"><span class="pull-left"> <a id="site-name" href="/">unlzh·Blog</a></span><i class="fa fa-bars toggle-menu pull-right" aria-hidden="true"></i><span class="pull-right menus"><a class="site-page" href="/">首页</a><a class="site-page" href="/archives">归档</a><a class="site-page" href="/tags">标签</a><a class="site-page" href="/categories">分类</a></span></div><div id="post-info"><div id="post-title">使用Hexo搭建GitHub个人博客（二）</div><div id="post-meta"><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i> 2018-11-24</time><span class="post-meta__separator">|</span><i class="fa fa-inbox post-meta__icon" aria-hidden="true"></i><a class="post-meta__categories" href="/categories/搭建/">搭建</a></div></div></div><div class="layout" id="content-inner"><article id="post"><div class="article-container" id="post-content"><blockquote>
+<p>本篇是<a href="https://unlzh.github.io/2018/11/22/%E4%BD%BF%E7%94%A8Hexo%E6%90%AD%E5%BB%BAGitHub%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">使用Hexo搭建GitHub个人博客（一）</a>的延展</p>
+</blockquote>
+<h2 id="内容概述"><a href="#内容概述" class="headerlink" title="内容概述"></a>内容概述</h2><ul>
+<li>主题</li>
+<li>图床</li>
+<li>组件</li>
+<li>SEO优化（重点）</li>
+<li>其他</li>
+</ul>
+<h2 id="主题"><a href="#主题" class="headerlink" title="主题"></a>主题</h2><p>初步搭建好博客之后，访问自己的博客地址会出现Hexo默认的主题界面。相信这默认界面不会讨大多数人欢心吧。别担心，Hexo支持配置其他主题。</p>
+<a id="more"></a>
+<p>前往<a href="https://hexo.io/themes/" target="_blank" rel="noopener">Hexo主题官网</a>选择自己心仪的主题，博主使用的主题是Melody。选择好之后clone到Hexo工作目录的themes文件夹中，然后在站点配置文件<strong>_config.yml</strong>中将主题修改为刚刚clone下来的主题：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">themes: 你的主题</span><br></pre></td></tr></table></figure>
+<p>这样就可以实现主题切换了，是不是很简单！</p>
+<p>一般每个主题都有详细的说明文档，根据文档配置即可。</p>
+<font color="#C72563" bgcolor="#F9F2F4">有些主题需要安装一些插件，参照其README操作。</font>
+
+<h2 id="图床"><a href="#图床" class="headerlink" title="图床"></a>图床</h2><p>博客需要存储很多图片，例如每篇博文的配图，banner等。这些图片也可以存储在本地文件夹中，打开博客时解析生成，但是当需要的图片越来越多时，访问就会变得十分卡慢。因此最好的做法是将图片上传至<strong>图床</strong>，由图床生成链接来调用。国内的新浪图床、七牛云都是不错的选择。博主使用的是腾讯云的对象存储，正值腾讯云活动，oss对象存储免费使用50G容量，每月读写请求各100万次，用来做图床非常不错。</p>
+<p>下面简单介绍使用腾讯云对象存储作图床的流程。</p>
+<ol>
+<li>登录腾讯云（一般微信扫码就可以登录）</li>
+<li>在免费产品中选择oss对象存储，开通</li>
+<li>新建存储桶（bucket），注意设置存储桶访问权限（作图床的话一般设置为“公有读私有写”）和防盗链（在基础配置栏，防盗链设置将博客地址添加进白名单）</li>
+<li>可下载官方客户端工具COS Browser，简洁好用，也可以基于API自己开发应用</li>
+<li>将图片上传（最好将图片分类归档好，方便管理），取得链接</li>
+</ol>
+<h2 id="组件"><a href="#组件" class="headerlink" title="组件"></a>组件</h2><p>许多主题自带了第三方组件，配置即用，十分方便。例如：评论系统。博主使用的是Gitalk。</p>
+<p>要想使用Gitalk，首先需要申请GitHub Application，获得<strong>clientID</strong>和<strong>clientSecret</strong>。</p>
+<p><img src="https://unlzhblog-1258116282.cos.ap-guangzhou.myqcloud.com/%E4%BD%BF%E7%94%A8Hexo%E6%90%AD%E5%BB%BAGitHub%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/register_application.png" alt="注册应用"></p>
+<p>在主题配置中填入所需值即可。以Melody所需参数为例：</p>
+<p><img src="https://unlzhblog-1258116282.cos.ap-guangzhou.myqcloud.com/%E4%BD%BF%E7%94%A8Hexo%E6%90%AD%E5%BB%BAGitHub%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/writeGitalkConfig.png" alt="填入值"></p>
+<p>可能会出现的问题：</p>
+<ul>
+<li>Gitalk组件上方出现“Error:not found”，检查填入的配置参数是否有误，尤其是“repo”（填的是博客在GitHub仓库的名称，例如我的是unlzh.github.io，这个很容易跟博客地址混淆）</li>
+<li>“未找到相关的Issue，请联系@XXX创建”，这是由于博客仓库中还没有创建相关Issue，在评论组件中点击“使用GitHub账号登录”，系统会自动初始化</li>
+<li>“Error:Validation Failed”，这是GitHub限制labal长度不能超过50引起的，解决方案来自<a href="https://github.com/gitalk/gitalk/issues/115" target="_blank" rel="noopener">Issue115</a>，可通过MD5加密解码后的location.pathname来缩短长度。这些可在Gitalk的相关Issue中找到解决方法</li>
+</ul>
+<p>此外，还有其他组件，例如UV和PV统计、RSS订阅等等，根据主题支持程度不同而不同，需根据自己主题的文档进行相应的配置，动手能力强的也可以修改源码来添加。这些组件都是比较常见的，网上也能找到许多教程说明。一些组件需要Hexo中安装才能使用，根据提示操作即可。</p>
+<h2 id="SEO优化"><a href="#SEO优化" class="headerlink" title="SEO优化"></a>SEO优化</h2><p>要想让其他小伙伴在网上能搜到自己的网站，就需要进行SEO优化。对于hexo生成的博客来说，主要是要多用心去给各个搜索引擎提交你的sitemap，让搜索引擎的爬虫多来爬你的站点，这样别人在搜索东西的时候才有更多的可能搜出你的文章，给你的博客带来人气。</p>
+<p>下面就以谷歌收录为例。（不得不说，谷歌收录的效率比某度高太多…）</p>
+<p>在谷歌搜索中输入site:&lt;你的博客地址&gt;，例如<code>site:unlzh.github.io</code>，若“没有找到相关网页”，就说明谷歌还没有收录你的博客。</p>
+<h3 id="安装hexo-generator-sitemap"><a href="#安装hexo-generator-sitemap" class="headerlink" title="安装hexo-generator-sitemap"></a>安装hexo-generator-sitemap</h3><p>在你的Hexo博客目录下打开Git Bash，输入</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install hexo-generator-sitemap --save</span><br></pre></td></tr></table></figure>
+<p>在source文件夹下的主题配置文件中添加</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">## Sitemap</span><br><span class="line">sitemap:</span><br><span class="line">  path: sitemap.xml</span><br></pre></td></tr></table></figure>
+<h3 id="新建robots-txt"><a href="#新建robots-txt" class="headerlink" title="新建robots.txt"></a>新建robots.txt</h3><blockquote>
+<p>Robots协议（也称为爬虫协议、机器人协议等）的全称是“网络爬虫排除标准”（Robots Exclusion Protocol），网站通过Robots协议告诉搜索引擎哪些页面可以抓取，哪些页面不能抓取。这个协议也不是一个规范，而只是约定俗成的，有些搜索引擎会遵守这一规范，有些则不然。通常搜索引擎会识别这个元数据，不索引这个页面，以及这个页面的链出页面。</p>
+</blockquote>
+<p>在source文件夹中创建<strong>robots.txt</strong>文件，内容可以参考如下：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">User-agent: *</span><br><span class="line">Allow: /</span><br><span class="line">Allow: /archives/</span><br><span class="line">Allow: /categories/</span><br><span class="line">Allow: /tags/</span><br><span class="line"></span><br><span class="line">Disallow: /js/</span><br><span class="line">Disallow: /css/</span><br><span class="line">Disallow: /img/</span><br><span class="line"></span><br><span class="line">Sitemap: https://unlzh.github.io/sitemap.xml</span><br></pre></td></tr></table></figure>
+<p>其中Allow规定可以被搜索引擎抓取的部分，Disallow规定不能被抓取的部分。</p>
+<p>完成之后<code>hexo g -d</code>提交。</p>
+<h3 id="配置Google-Search-Console"><a href="#配置Google-Search-Console" class="headerlink" title="配置Google Search Console"></a>配置Google Search Console</h3><p>登录<a href="https://search.google.com/search-console/about" target="_blank" rel="noopener">Google Search Console</a>，添加资源，输入自己的博客地址，根据提示验证所有权，下面以HTML标记的方法为例：</p>
+<p><img src="https://unlzhblog-1258116282.cos.ap-guangzhou.myqcloud.com/%E4%BD%BF%E7%94%A8Hexo%E6%90%AD%E5%BB%BAGitHub%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/%E5%A4%8D%E5%88%B6%E8%B0%B7%E6%AD%8C%E9%AA%8C%E8%AF%81%E4%BF%A1%E6%81%AF.png" alt="复制谷歌验证信息"></p>
+<p>拷贝至主题文件夹中的页面生成文件中。<strong>根据主题的不同，找到自己主题文件夹的页面生成文件</strong>，博主的melody主题是用pug模板引擎生成页面的，页面文件在themes/melody/layout/includes/layout.pug</p>
+<p><img src="https://unlzhblog-1258116282.cos.ap-guangzhou.myqcloud.com/%E4%BD%BF%E7%94%A8Hexo%E6%90%AD%E5%BB%BAGitHub%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/rewriteLayoutpug.png" alt=""></p>
+<p>执行验证通过后，点击左侧的<strong>robots.txt测试工具</strong>，测试自己的robots，保证0错误，提交。</p>
+<p><img src="https://unlzhblog-1258116282.cos.ap-guangzhou.myqcloud.com/%E4%BD%BF%E7%94%A8Hexo%E6%90%AD%E5%BB%BAGitHub%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/robots.png" alt="robots测试工具"></p>
+<p>测试/提交站点地图</p>
+<p><img src="https://unlzhblog-1258116282.cos.ap-guangzhou.myqcloud.com/%E4%BD%BF%E7%94%A8Hexo%E6%90%AD%E5%BB%BAGitHub%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/uploadsitemap.png" alt="提交你的站点地图"></p>
+<p>点击左侧的Google抓取工具，将需要被抓取的网址提交给引擎索引，抓取完成后记得点击“请求编入索引”</p>
+<p><img src="https://unlzhblog-1258116282.cos.ap-guangzhou.myqcloud.com/%E4%BD%BF%E7%94%A8Hexo%E6%90%AD%E5%BB%BAGitHub%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/%E8%B0%B7%E6%AD%8C%E6%8A%93%E5%8F%96.png" alt="Google抓取"></p>
+<p>配置完成后就可以去谷歌搜索测试一下啦！</p>
+<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><h3 id="自定义404页面"><a href="#自定义404页面" class="headerlink" title="自定义404页面"></a>自定义404页面</h3><ol>
+<li><p>进入博客目录，打开Git Bash，输入<code>hexo new page 404</code></p>
+</li>
+<li><p>打开/source/404/index.md</p>
+</li>
+<li><p>顶部输入如下：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">title: 该页无法显示  # 文章标题</span><br><span class="line">toc: false	# 不生成目录</span><br><span class="line">comments: false	# 不生成评论组件</span><br><span class="line">permalink: /404.html	# 指向404页面</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>在/source目录中添加自己的404页面</p>
+</li>
+</ol>
+<h3 id="更多有趣的插件：https-hexo-io-plugins"><a href="#更多有趣的插件：https-hexo-io-plugins" class="headerlink" title="更多有趣的插件：https://hexo.io/plugins/"></a>更多有趣的插件：<a href="https://hexo.io/plugins/" target="_blank" rel="noopener">https://hexo.io/plugins/</a></h3></div></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">unlzh</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://unlzh.github.io/使用Hexo搭建GitHub个人博客（二）/">https://unlzh.github.io/使用Hexo搭建GitHub个人博客（二）/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://unlzh.github.io" target="_blank">unlzh·Blog</a>！</span></div></div><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/Hexo/">Hexo</a><a class="post-meta__tags" href="/tags/GitHub/">GitHub</a></div><nav id="pagination"><div class="next-post pull-right"><a href="/使用Hexo搭建GitHub个人博客（一）/"><span>使用Hexo搭建GitHub个人博客（一）</span><i class="fa fa-chevron-right"></i></a></div></nav><div id="gitalk-container"></div><script>var gitalk = new Gitalk({
+  clientID: '94e0f2be0076760d4dc2',
+  clientSecret: 'ae20eb3a6e311d566527105c71a48b7245e01478',
+  repo: 'unlzh.github.io',
+  owner: 'unlzh',
+  admin: 'unlzh',
+  id: md5(decodeURI(location.pathname)),
+  language: 'zh-CN'
+})
+gitalk.render('gitalk-container')</script></div></div><footer><div class="layout" id="footer"><div class="copyright">&copy;2018 By unlzh</div><div class="framework-info"><span>驱动 - </span><a href="http://hexo.io"><span>Hexo</span></a><span class="footer-separator">|</span><span>主题 - </span><a href="https://github.com/Molunerfinn/hexo-theme-melody"><span>Melody</span></a></div><div class="busuanzi"><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><span id="busuanzi_container_page_pv"><i class="fa fa-file-o"></i><span id="busuanzi_value_page_pv"></span><span></span></span></div></div></footer><i class="fa fa-arrow-up" id="go-up" aria-hidden="true"></i><script src="/js/third-party/anime.min.js"></script><script src="/js/third-party/jquery.min.js"></script><script src="/js/third-party/jquery.fancybox.min.js"></script><script src="/js/third-party/velocity.min.js"></script><script src="/js/third-party/velocity.ui.min.js"></script><script src="/js/utils.js?version=1.5.6"></script><script src="/js/fancybox.js?version=1.5.6"></script><script src="/js/sidebar.js?version=1.5.6"></script><script src="/js/copy.js?version=1.5.6"></script><script src="/js/fireworks.js?version=1.5.6"></script><script src="/js/transition.js?version=1.5.6"></script><script src="/js/scroll.js?version=1.5.6"></script><script src="/js/head.js?version=1.5.6"></script></body></html>
