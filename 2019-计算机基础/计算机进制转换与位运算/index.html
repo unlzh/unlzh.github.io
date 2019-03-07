@@ -7,7 +7,7 @@
     error: '复制错误',
     noSupport: '浏览器不支持'
   }
-} </script></head><body><canvas class="fireworks"></canvas><i class="fa fa-arrow-right" id="toggle-sidebar" aria-hidden="true"></i><div id="sidebar"><div class="toggle-sidebar-info text-center"><span data-toggle="切换文章详情">切换站点概览</span><hr></div><div class="sidebar-toc"><div class="sidebar-toc__title">目录</div><div class="sidebar-toc__progress"><span class="progress-notice">你已经读了</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar"></div></div><div class="sidebar-toc__content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#计算机进制转换与位运算"><span class="toc-text">计算机进制转换与位运算</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#进制转换"><span class="toc-text">进制转换</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#基本概念"><span class="toc-text">基本概念</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#1后面跟多少位，该位置就可以表示为2的多少次幂，也可以从右向左从0次幂开始计算；遇0可直接跳过该位。"><span class="toc-text">1后面跟多少位，该位置就可以表示为2的多少次幂，也可以从右向左从0次幂开始计算；遇0可直接跳过该位。</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#每四位二进制数相等于一位十六进制数，从右向左每四位隔开，不足四位在左边补0。分别计算后组合结果。"><span class="toc-text">每四位二进制数相等于一位十六进制数，从右向左每四位隔开，不足四位在左边补0。分别计算后组合结果。</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#十进制数不断除以2，保留余数，直到商为0，将所有余数倒序排列。"><span class="toc-text">十进制数不断除以2，保留余数，直到商为0，将所有余数倒序排列。</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#13转二进制："><span class="toc-text">13转二进制：</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#方法同二进制转换成十进制类似。"><span class="toc-text">方法同二进制转换成十进制类似。</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#十六进制转换成二进制与二进制转换成十六进制相反，每一位十六进制数等于四位二进制数。"><span class="toc-text">十六进制转换成二进制与二进制转换成十六进制相反，每一位十六进制数等于四位二进制数。</span></a></li></ol></div></div><div class="author-info hide"><div class="author-info__avatar text-center"><img src="https://unlzhblog-1258116282.cos.ap-guangzhou.myqcloud.com/avatar.jpg"></div><div class="author-info__name text-center">unlzh</div><div class="author-info__description text-center">分享技术、生活。</div><hr><div class="author-info-articles"><a class="author-info-articles__archives article-meta" href="/archives"><span class="pull-left">文章</span><span class="pull-right">3</span></a><a class="author-info-articles__tags article-meta" href="/tags"><span class="pull-left">标签</span><span class="pull-right">4</span></a><a class="author-info-articles__categories article-meta" href="/categories"><span class="pull-left">分类</span><span class="pull-right">2</span></a></div></div></div><div id="content-outer"><div id="top-container" style="background-image: url(https://unlzhblog-1258116282.cos.ap-guangzhou.myqcloud.com/homebanner.jpg)"><div id="page-header"><span class="pull-left"> <a id="site-name" href="/">unlzh·Blog</a></span><i class="fa fa-bars toggle-menu pull-right" aria-hidden="true"></i><span class="pull-right menus"><a class="site-page" href="/">首页</a><a class="site-page" href="/archives">归档</a><a class="site-page" href="/tags">标签</a><a class="site-page" href="/categories">分类</a></span></div><div id="post-info"><div id="post-title">计算机进制转换与位运算</div><div id="post-meta"><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i> 2019-03-07</time><span class="post-meta__separator">|</span><i class="fa fa-inbox post-meta__icon" aria-hidden="true"></i><a class="post-meta__categories" href="/categories/计算机基础/">计算机基础</a><div class="post-meta-wordcount"><span>字数总计: </span><span class="word-count">1.5k</span><span class="post-meta__separator">|</span><span>阅读时长: 5 分钟</span></div></div></div></div><div class="layout" id="content-inner"><article id="post"><div class="article-container" id="post-content"><h1 id="计算机进制转换与位运算"><a href="#计算机进制转换与位运算" class="headerlink" title="计算机进制转换与位运算"></a>计算机进制转换与位运算</h1><blockquote>
+} </script></head><body><canvas class="fireworks"></canvas><i class="fa fa-arrow-right" id="toggle-sidebar" aria-hidden="true"></i><div id="sidebar"><div class="toggle-sidebar-info text-center"><span data-toggle="切换文章详情">切换站点概览</span><hr></div><div class="sidebar-toc"><div class="sidebar-toc__title">目录</div><div class="sidebar-toc__progress"><span class="progress-notice">你已经读了</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar"></div></div><div class="sidebar-toc__content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#进制转换"><span class="toc-text">进制转换</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#基本概念"><span class="toc-text">基本概念</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#进制转换-1"><span class="toc-text">进制转换</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#扩展：二进制与十进制的快速转换"><span class="toc-text">扩展：二进制与十进制的快速转换</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#位运算"><span class="toc-text">位运算</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#基本概念-1"><span class="toc-text">基本概念</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#位运算-1"><span class="toc-text">位运算</span></a></li></ol></li></ol></div></div><div class="author-info hide"><div class="author-info__avatar text-center"><img src="https://unlzhblog-1258116282.cos.ap-guangzhou.myqcloud.com/avatar.jpg"></div><div class="author-info__name text-center">unlzh</div><div class="author-info__description text-center">分享技术、生活。</div><hr><div class="author-info-articles"><a class="author-info-articles__archives article-meta" href="/archives"><span class="pull-left">文章</span><span class="pull-right">3</span></a><a class="author-info-articles__tags article-meta" href="/tags"><span class="pull-left">标签</span><span class="pull-right">4</span></a><a class="author-info-articles__categories article-meta" href="/categories"><span class="pull-left">分类</span><span class="pull-right">2</span></a></div></div></div><div id="content-outer"><div id="top-container" style="background-image: url(https://unlzhblog-1258116282.cos.ap-guangzhou.myqcloud.com/homebanner.jpg)"><div id="page-header"><span class="pull-left"> <a id="site-name" href="/">unlzh·Blog</a></span><i class="fa fa-bars toggle-menu pull-right" aria-hidden="true"></i><span class="pull-right menus"><a class="site-page" href="/">首页</a><a class="site-page" href="/archives">归档</a><a class="site-page" href="/tags">标签</a><a class="site-page" href="/categories">分类</a></span></div><div id="post-info"><div id="post-title">计算机进制转换与位运算</div><div id="post-meta"><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i> 2019-03-07</time><span class="post-meta__separator">|</span><i class="fa fa-inbox post-meta__icon" aria-hidden="true"></i><a class="post-meta__categories" href="/categories/计算机基础/">计算机基础</a><div class="post-meta-wordcount"><span>字数总计: </span><span class="word-count">1.3k</span><span class="post-meta__separator">|</span><span>阅读时长: 4 分钟</span></div></div></div></div><div class="layout" id="content-inner"><article id="post"><div class="article-container" id="post-content"><blockquote>
 <p>最近在刷LeetCode，遇到许多需要进制转换的地方。每每遇到问题才发现基础知识有多重要，于是博主刷题的同时重拾了这些基础，并记录下来加以巩固。</p>
 <p>作为心智脂肪储备起来的知识并无用处，只有变成了心智肌肉才有用。        ——斯宾塞</p>
 </blockquote>
@@ -20,24 +20,76 @@
 <p>数码的个数称为<strong>基数</strong>，二进制是2，十进制是10。</p>
 <p>数制中每一固定位置对应的单位值称为<strong>权</strong>。例如：</p>
 <p>十进制  <code>321 = 3 * 10^2 + 2 * 10^1 + 1 * 10^0</code></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">二进制  `0b1111 = 1 * 2^3 + 1 * 2^2 + 1 * 2^1 + 1* 2^0`</span><br><span class="line"></span><br><span class="line">1111第2位的权为2，第3位的权为4。</span><br><span class="line"></span><br><span class="line">十六进制 `0x6F = 6 * 16^1 + 15 * 16^0`</span><br><span class="line"></span><br><span class="line">6F第2位的权为16</span><br><span class="line"></span><br><span class="line">![(图源来自网络)](https://unlzhblog-1258116282.cos.ap-guangzhou.myqcloud.com/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%BF%9B%E5%88%B6%E8%BD%AC%E6%8D%A2%E5%8E%9F%E7%90%86%E4%B8%8E%E4%BD%8D%E8%BF%90%E7%AE%97/%E8%BF%9B%E5%88%B6%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5.png)</span><br><span class="line"></span><br><span class="line">### 进制转换</span><br><span class="line"></span><br><span class="line">1. 二进制——&gt;十进制</span><br></pre></td></tr></table></figure>
-<h1 id="1后面跟多少位，该位置就可以表示为2的多少次幂，也可以从右向左从0次幂开始计算；遇0可直接跳过该位。"><a href="#1后面跟多少位，该位置就可以表示为2的多少次幂，也可以从右向左从0次幂开始计算；遇0可直接跳过该位。" class="headerlink" title="1后面跟多少位，该位置就可以表示为2的多少次幂，也可以从右向左从0次幂开始计算；遇0可直接跳过该位。"></a>1后面跟多少位，该位置就可以表示为2的多少次幂，也可以从右向左从0次幂开始计算；遇0可直接跳过该位。</h1><p>   10110 = 1 <em> 2^4 + 0 </em> 2^3 + 1 <em> 2^2 + 1 </em> 2^1 + 0 * 2^0 = 22<br>   <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">2. 二进制——&gt;十六进制</span><br></pre></td></tr></table></figure></p>
-<h1 id="每四位二进制数相等于一位十六进制数，从右向左每四位隔开，不足四位在左边补0。分别计算后组合结果。"><a href="#每四位二进制数相等于一位十六进制数，从右向左每四位隔开，不足四位在左边补0。分别计算后组合结果。" class="headerlink" title="每四位二进制数相等于一位十六进制数，从右向左每四位隔开，不足四位在左边补0。分别计算后组合结果。"></a>每四位二进制数相等于一位十六进制数，从右向左每四位隔开，不足四位在左边补0。分别计算后组合结果。</h1><p>   11010110 = 1101 0110<br>   1101十进制表示为13，即十六进制D，0110十进制表示为6<br>   结果为D6<br>   <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">3. 十进制——&gt;二进制</span><br></pre></td></tr></table></figure></p>
-<h1 id="十进制数不断除以2，保留余数，直到商为0，将所有余数倒序排列。"><a href="#十进制数不断除以2，保留余数，直到商为0，将所有余数倒序排列。" class="headerlink" title="十进制数不断除以2，保留余数，直到商为0，将所有余数倒序排列。"></a>十进制数不断除以2，保留余数，直到商为0，将所有余数倒序排列。</h1><h1 id="13转二进制："><a href="#13转二进制：" class="headerlink" title="13转二进制："></a>13转二进制：</h1><pre><code>13/2=6    余1
-6/2=3    余0
-3/2=1    余1
-1/2=0    余1
-最终结果1101
-</code></pre>   <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">4. 十进制——&gt;十六进制</span><br><span class="line"></span><br><span class="line">   同十进制转二进制，只是被除数换成了16。</span><br><span class="line"></span><br><span class="line">5. 十六进制——&gt;十进制</span><br></pre></td></tr></table></figure>
-<h1 id="方法同二进制转换成十进制类似。"><a href="#方法同二进制转换成十进制类似。" class="headerlink" title="方法同二进制转换成十进制类似。"></a>方法同二进制转换成十进制类似。</h1><p>   0x41 = 4 <em> 16^1 + 1 </em> 16^0 = 65<br>   <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">6. 十六进制——&gt;二进制</span><br></pre></td></tr></table></figure></p>
-<h1 id="十六进制转换成二进制与二进制转换成十六进制相反，每一位十六进制数等于四位二进制数。"><a href="#十六进制转换成二进制与二进制转换成十六进制相反，每一位十六进制数等于四位二进制数。" class="headerlink" title="十六进制转换成二进制与二进制转换成十六进制相反，每一位十六进制数等于四位二进制数。"></a>十六进制转换成二进制与二进制转换成十六进制相反，每一位十六进制数等于四位二进制数。</h1><p>   0x41 = 0100 0001 = 01000001<br>   <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">### 扩展：二进制与十进制的快速转换</span><br><span class="line"></span><br><span class="line">8421码是中国大陆的叫法，是BCD码中最常用的一种。</span><br><span class="line"></span><br><span class="line">BCD码：</span><br><span class="line"></span><br><span class="line">二进制：1	1	1	1	1	1	1	1</span><br><span class="line"></span><br><span class="line">十进制：128	64	32	16	8	4	2	1</span><br><span class="line"></span><br><span class="line">使用8421码可以进行二进制与十进制的快速转换。例如：</span><br><span class="line"></span><br><span class="line">`0b11011 = 1 + 2 + 0 + 8 + 16 = 27`</span><br><span class="line"></span><br><span class="line">`110 = 64 + 32 + 8 + 4 + 2 = 0b1101110`</span><br><span class="line"></span><br><span class="line">## 位运算</span><br><span class="line"></span><br><span class="line">### 基本概念</span><br><span class="line"></span><br><span class="line">位指的是二进制位或bit位。计算机底层使用二进制，因此计算机中的计算会变成二进制的运算，也就是位运算。</span><br><span class="line"></span><br><span class="line">位运算符的种类：左移( &lt;&lt; )、右移( &gt;&gt; ) 、无符号右移( &gt;&gt;&gt; ) 、位与( &amp; ) 、位或( | )、位非( ~ )、位异或( ^ )，除了位非( ~ )是一元操作符外，其它的都是二元操作符。逻辑运算符连接的操作数是布尔类型，而位运算符连接的操作数是数值类型（准确来说是二进制数）。</span><br><span class="line"></span><br><span class="line">### 位运算</span><br><span class="line"></span><br><span class="line">1. 左移（&lt;&lt;）</span><br><span class="line"></span><br><span class="line">   ```mermaid</span><br><span class="line">   graph TD</span><br><span class="line">   A[以十进制9为例] --&gt; B(0000 0000 0000 0000 0000 0000 0000 1001)</span><br><span class="line">   B --&gt; C[左移2位,低位补0]</span><br><span class="line">   C --&gt; D(0000 0000 0000 0000 0000 0000 0010 0100)</span><br><span class="line">   D --&gt; E[36]</span><br></pre></td></tr></table></figure></p>
-<ol start="2">
+<p><code>基数的几次幂就是权</code>，如上例第2位的权为10，第3位的权为100。</p>
+<p>二进制  <code>0b1111 = 1 * 2^3 + 1 * 2^2 + 1 * 2^1 + 1* 2^0</code></p>
+<p>1111第2位的权为2，第3位的权为4。</p>
+<p>十六进制 <code>0x6F = 6 * 16^1 + 15 * 16^0</code></p>
+<p>6F第2位的权为16</p>
+<p><img src="https://unlzhblog-1258116282.cos.ap-guangzhou.myqcloud.com/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%BF%9B%E5%88%B6%E8%BD%AC%E6%8D%A2%E5%8E%9F%E7%90%86%E4%B8%8E%E4%BD%8D%E8%BF%90%E7%AE%97/%E8%BF%9B%E5%88%B6%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5.png" alt="(图源来自网络)"></p>
+<h3 id="进制转换-1"><a href="#进制转换-1" class="headerlink" title="进制转换"></a>进制转换</h3><ol>
+<li><p>二进制——&gt;十进制</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 1后面跟多少位，该位置就可以表示为2的多少次幂，也可以从右向左从0次幂开始计算；遇0可直接跳过该位。</span><br><span class="line">10110 = 1 * 2^4 + 0 * 2^3 + 1 * 2^2 + 1 * 2^1 + 0 * 2^0 = 22</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>二进制——&gt;十六进制</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 每四位二进制数相等于一位十六进制数，从右向左每四位隔开，不足四位在左边补0。分别计算后组合结果。</span><br><span class="line">11010110 = 1101 0110</span><br><span class="line">1101十进制表示为13，即十六进制D，0110十进制表示为6</span><br><span class="line">结果为D6</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>十进制——&gt;二进制</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 十进制数不断除以2，保留余数，直到商为0，将所有余数倒序排列。</span><br><span class="line"># 13转二进制：</span><br><span class="line">	13/2=6	余1</span><br><span class="line">	6/2=3	余0</span><br><span class="line">	3/2=1	余1</span><br><span class="line">	1/2=0	余1</span><br><span class="line">	最终结果1101</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>十进制——&gt;十六进制</p>
+<p>同十进制转二进制，只是被除数换成了16。</p>
+</li>
+<li><p>十六进制——&gt;十进制</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 方法同二进制转换成十进制类似。</span><br><span class="line">0x41 = 4 * 16^1 + 1 * 16^0 = 65</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>十六进制——&gt;二进制</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 十六进制转换成二进制与二进制转换成十六进制相反，每一位十六进制数等于四位二进制数。</span><br><span class="line">0x41 = 0100 0001 = 01000001</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h3 id="扩展：二进制与十进制的快速转换"><a href="#扩展：二进制与十进制的快速转换" class="headerlink" title="扩展：二进制与十进制的快速转换"></a>扩展：二进制与十进制的快速转换</h3><p>8421码是中国大陆的叫法，是BCD码中最常用的一种。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">二进制</th>
+<th>1</th>
+<th>1</th>
+<th>1</th>
+<th>1</th>
+<th>1</th>
+<th>1</th>
+<th>1</th>
+<th>1</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">十进制</td>
+<td>128</td>
+<td>64</td>
+<td>32</td>
+<td>16</td>
+<td>8</td>
+<td>4</td>
+<td>2</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<p>使用8421码可以进行二进制与十进制的快速转换。例如：</p>
+<p><code>0b11011 = 1 + 2 + 0 + 8 + 16 = 27</code></p>
+<p><code>110 = 64 + 32 + 8 + 4 + 2 = 0b1101110</code></p>
+<h2 id="位运算"><a href="#位运算" class="headerlink" title="位运算"></a>位运算</h2><h3 id="基本概念-1"><a href="#基本概念-1" class="headerlink" title="基本概念"></a>基本概念</h3><p>位指的是二进制位或bit位。计算机底层使用二进制，因此计算机中的计算会变成二进制的运算，也就是位运算。</p>
+<p>位运算符的种类：左移( &lt;&lt; )、右移( &gt;&gt; ) 、无符号右移( &gt;&gt;&gt; ) 、位与( &amp; ) 、位或( | )、位非( ~ )、位异或( ^ )，除了位非( ~ )是一元操作符外，其它的都是二元操作符。逻辑运算符连接的操作数是布尔类型，而位运算符连接的操作数是数值类型（准确来说是二进制数）。</p>
+<h3 id="位运算-1"><a href="#位运算-1" class="headerlink" title="位运算"></a>位运算</h3><ol>
+<li><p>左移（&lt;&lt;）</p>
+<p><img src="https://unlzhblog-1258116282.cos.ap-guangzhou.myqcloud.com/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%BF%9B%E5%88%B6%E8%BD%AC%E6%8D%A2%E5%8E%9F%E7%90%86%E4%B8%8E%E4%BD%8D%E8%BF%90%E7%AE%97/%E5%B7%A6%E7%A7%BB%E4%BE%8B%E5%AD%90.png" alt="9&lt;&lt;2"></p>
+</li>
 <li><p>右移（&gt;&gt;）</p>
 <p>类似左移，移动方向相反，右移后高位补0。</p>
 </li>
 <li><p>无符号右移（&gt;&gt;&gt;）</p>
 <p>数据有正负之分为<strong>有符号数</strong>，反之则为<strong>无符号数</strong>。正数换算成二进制后的最高位为0，负数的二进制最高位为1。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">graph TD</span><br><span class="line">A[以-5为例] --&gt; B(1111 1111 1111 1111 1111 1111 1111 1011)</span><br><span class="line">B --&gt; C[右移3位,高位补1]</span><br><span class="line">C --&gt; D(1111 1111 1111 1111 1111 1111 1111 1111)</span><br><span class="line">D --&gt; E[无符号右移3位,高位补0]</span><br><span class="line">E --&gt; F(0001 1111 1111 1111 1111 1111 1111 1111)</span><br><span class="line">F --&gt; G[536870911]</span><br></pre></td></tr></table></figure>
+<p><img src="https://unlzhblog-1258116282.cos.ap-guangzhou.myqcloud.com/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%BF%9B%E5%88%B6%E8%BD%AC%E6%8D%A2%E5%8E%9F%E7%90%86%E4%B8%8E%E4%BD%8D%E8%BF%90%E7%AE%97/%E6%97%A0%E7%AC%A6%E5%8F%B7%E5%8F%B3%E7%A7%BB%E4%BE%8B%E5%AD%90.png" alt="-5&gt;&gt;&gt;3"></p>
 </li>
 <li><p>位与（&amp;）</p>
 <p>按位与，若都为1则为1，否则为0。</p>
